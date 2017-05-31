@@ -3,32 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Carousel con JS</title>
-	<link rel="stylesheet" href="./css/main.css">
+	<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/main.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+
 </head>
 <body>
-	<div class="carousel">
-		<div data-slide="0" class="carousel-content active">
-			<img src="img/img-1.jpg" alt="Imagen 1">
+	<div class="container">
+	    
+
+		<div class="row imagenes ">
+			<div class="col s6 offset-s3 margenTop ">
+
+				<div data-slide="0" class="carousel-content active  ">
+					<img src="img/img-1.jpg" alt="Imagen 1">
+				</div>
+				<div data-slide="1" class="carousel-content ">
+					<img src="img/img-2.jpg" alt="Imagen 2">
+				</div>
+				<div data-slide="2" class="carousel-content">
+					<img src="img/img-3.jpg" alt="Imagen 3">
+				</div>
+				<div data-slide="3" class="carousel-content">
+					<img src="img/img-4.jpg" alt="Imagen 4">
+				</div>
+			</div>
 		</div>
-		<div data-slide="1" class="carousel-content ">
-			<img src="img/img-2.jpg" alt="Imagen 2">
-		</div>
-		<div data-slide="2" class="carousel-content ">
-			<img src="img/img-3.jpg" alt="Imagen 3">
-		</div>
-		<div data-slide="3" class="carousel-content">
-			<img src="img/img-4.jpg" alt="Imagen 4">
+		<div class="row ">
+			<div class="controls col s6 offset-s3">
+				<a href="#" class="previous">&#60;</a>
+				<button type="button" data-target="0" class="control redondo"></button>
+				<button type="button" data-target="1" class="control redondo"></button>
+				<button type="button" data-target="2" class="control redondo"></button>
+				<button type="button" data-target="3" class="control redondo"></button>
+				<a href="#" class="next">&#62;</a>
+			</div>
 		</div>
 	</div>
-	<div class="controls">
-		<a href="#" class="previous">&#60;</a>
-		<button type="button" data-target="0" class="control"></button>
-		<button type="button" data-target="1" class="control"></button>
-		<button type="button" data-target="2" class="control"></button>
-		<button type="button" data-target="3" class="control"></button>
-		<a href="#" class="next">&#62;</a>
-	</div>
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/appQuery.js"></script>
+	
+	
+	<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/appQuery.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
+	
 </body>
 </html>

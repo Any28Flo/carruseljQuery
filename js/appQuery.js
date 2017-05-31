@@ -37,3 +37,9 @@ var siguienteImagen = function (e) {
 	mostrarImagen(target);mostrarImagen(target);
 };
 window.addEventListener("load", cargarPagina);
+
+
+    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+        

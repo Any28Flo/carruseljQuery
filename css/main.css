@@ -1,3 +1,11 @@
+.imagenes{
+	width: 100%;
+	height: 300px;
+}
+.botones{
+	margin-top: 0;
+	background-color: red;
+}
 .carousel-content {
 	display: none;
 }
@@ -5,4 +13,12 @@
 .carousel-content.active {
 	display: block;
 }
-
+.redondo{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	border: solid 1px gray ;
+}
+.margenTop{
+	margin-top: 50px;
+}
