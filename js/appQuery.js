@@ -38,8 +38,3 @@ var siguienteImagen = function (e) {
 };
 window.addEventListener("load", cargarPagina);
 
-
-    $(document).ready(function(){
-      $('.carousel').carousel();
-    });
-        
